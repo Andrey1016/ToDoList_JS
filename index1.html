@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>innerHTML Example</title>
+</head>
+<body>
+
+<div id="content">Initial content</div>
+<button id="changeButton">Change Content</button>
+
+<script>
+  const changeButton = document.getElementById("changeButton");
+  const contentElement = document.getElementById("content");
+
+  changeButton.addEventListener("click", function() {
+    contentElement.innerHTML = "<p>New content added dynamically.</p>";
+  });
+</script>
+
+</body>
+</html>
+В этом примере нажатие кнопки «Изменить содержимое» обновит содержимое div contentс помощью .innerHTML.
+
+
+
+
+
